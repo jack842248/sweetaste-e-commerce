@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>會員登入｜甜點電商</title>
+
+    <!-- favicon -->
+    <link rel="shortuct icon" href="images/fav/favicon.icon">
+    <link rel="bookmark" href="images/fav/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/fav/favicon-16x16.png">
+    <link rel="manifest" href="images/fav/site.webmanifest">
+    <link rel="mask-icon" href="images/fav/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/fav/android-chrome-192x192.png">
+
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- style -->
+    <link rel="stylesheet" href="css/all.css">
+</head>
+<body cz-shortcut-listen="true">
+
+    <!-- 頂部選單 -->
+    <header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-xl justify-content-between align-items-center">
+                <!-- logo -->
+                <h1 class="order-2 order-lg-1 my-4">
+                    <a class="logo" href="#">Sweetaste</a>
+                </h1>
+                <!-- 漢堡選單按鈕 -->
+                <button class="d-lg-none order-1 menu-btn">
+                    <i class="fa-solid fa-list-ul fa-lg"></i>
+                </button>
+                <!-- 選單內容 -->
+                <div class="d-flex order-3">
+                    <ul class="navbar-nav d-lg-flex">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">首頁<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="product.html">甜點<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">登入<span class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
+                    <a class="text-black-green cart-btn" href="cart.html">
+                        <i class="fa-solid fa-cart-shopping fa-lg"></i>
+                    </a>
+                </div>
+        </div>
+    </nav>
+</header>
+
+
+    <!-- 主要區塊 -->
+    <main class="flex-shrink-0">
+        
+    <section class="container-xl my-lg-5 p-0">
+        <div class="row align-items-center">
+            <!-- 手機滿板時標題 -->
+            <div class="col-12 p-0 d-md-none">
+                <div class="bg-black-green p-4">
+                    <h2 class="text-center text-white m-0">會員登入</h2>
+                </div>
+            </div>
+            <!-- 左邊登入欄 -->
+            <div class="col-md-6 p-0 order-2 order-md-1">
+                <div class="d-flex flex-column bg-black-green text-center pt-0 p-sm-5">
+                    <h2 class="d-none d-md-block text-white m-5 mt-sm-3">會員登入</h2>
+                    <div class="d-flex mt-5 mt-sm-3">
+                        <div class="d-flex align-items-center bg-white-green p-3">
+                            <span class="text-black-green material-icons">person</span>
+                        </div>
+                        <label for="account" hidden>帳號</label>
+                        <input id="account" type="text" class="input-item" placeholder="電子信箱/手機號碼">
+                    </div>
+                    <div class="d-flex mt-3">
+                        <div class="d-flex align-items-center bg-white-green p-3">
+                            <span class="text-black-green material-icons">vpn_key</span>
+                        </div>
+                        <label for="password" hidden>密碼</label>
+                        <input id="password" type="text" class="input-item" placeholder="請輸入使用者密碼">
+                    </div>
+                    <div class="d-flex mt-3">
+                        <label for="remember" class="checktext">記住我
+                            <input id="remember" class="checkbox" type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+                <button class="login-btn py-3">登入帳號</button>
+            </div>
+            <!-- 右邊社群登入 -->
+            <div class="col-md-6 py-md-5 px-0 order-1 order-md-2">
+                <div class="bg-white-green p-4 p-md-5">
+                    <h4 class="text-black-green font-weight-light text-center d-none d-md-block">連結社群帳號</h4>
+                    <div class="d-flex flex-md-column">
+                        <a class="social-item mt-md-3" href="#">
+                            <img class="login-social-icon" src="images/icon-facebook.svg" alt="facebook圖示">
+                        </a>
+                        <a class="social-item mt-md-3" href="#">
+                            <img class="login-social-icon" src="images/icon-google.svg" alt="google圖示">
+                        </a>
+                        <a class="social-item mt-md-3" href="#">
+                            <img class="login-social-icon" src="images/icon-yahoo.svg" alt="yahoo圖示">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    </main> 
+
+    <!-- 置底區塊 -->
+    <footer>
+    <!-- 訂閱 -->
+    <section class="bg-black-green py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 d-flex align-items-center">
+                    <img class="sub-logo" src="images/icon-light-logo.svg" alt="">
+                    <p class="h5 ml-3 mb-0 text-white font-weight-light">訂閱你我的甜蜜郵件</p>
+                </div>
+                <div class="col-lg-6 mt-3 mt-lg-0">
+                    <div class="d-flex">
+                        <div class="bg-white-green d-flex align-items-center">
+                            <span class="input-icon"><i class="fa-solid fa-envelope fa-lg"></i></span>
+                        </div>
+                        <input type="text" class="input-item">
+                        <button class="input-btn" type="button">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 店家資訊 -->
+    <section class="bg-white-green py-4 py-lg-5">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-lg-8 d-flex flex-column justify-content-between">
+                    <div class="footer-logo mb-3">
+                        <img class="img-fluid" src="images/icon-footer-logo.svg">
+                    </div>
+                    <div class="text-black-green">
+                        <p class="m-0">07-1234-5678</p>
+                        <p class="m-0">sweetaste@email.com</p>
+                        <p class="m-0">800 高雄市新興區幸福路 520 號</p>
+                    </div>
+                </div>
+                <div class="col-4 d-none d-lg-block">
+                    <div class="d-flex justify-content-end">
+                        <h3 class="footer-why-title text-indent-1 mx-1">吃甜點的好日子。</h3>
+                        <h3 class="footer-why-title mx-1">今天是個——</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 d-block d-lg-flex justify-content-between align-items-center">
+                    <div class="d-flex mb-3 mb-lg-0">
+                        <a class="footer-social-icon" href="#">
+                            <i class="fa-solid fa-at fa-lg"></i>
+                        </a>
+                        <a class="footer-social-icon ml-2" href="#">
+                            <i class="fa-brands fa-facebook-f fa-lg"></i>
+                        </a>
+                    </div>
+                    <div class="copyright">©2024 Sweetaste* All Right Reserved</div>
+                </div>
+            </div>
+        </div>
+    </section>
+</footer>
+    
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="js/all.js"></script>
+</body>
+</html>
